@@ -1,0 +1,19 @@
+double len; \* length of rectangle*\
+double wid; \* width of rectangle*\
+len = get(double);
+wid = get(double);
+if(len == wid) {
+print("The shape is a square! ");
+print("perimeter= ");
+print(4*len);
+print(" area= ");
+print(len*len);
+}
+else {
+print("The shape is a rectangle!" );
+print("perimeter= ");
+perimeter=2*(len+ wid);
+print(perimeter);
+print(" area= ");
+print(len*wid);
+}

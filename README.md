@@ -198,3 +198,4 @@ Now, for each class, we write a regular expression:
 - **Semicolon** = ‘;’
 
 Now we design a diagram for the regular expressions:
+<img src="https://github.com/PoriyaAsadollahy/LexicalAnalyzer/blob/main/Diagram.jpg" width="600" alt="Main DFA">

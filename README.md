@@ -198,4 +198,28 @@ Now, for each class, we write a regular expression:
 - **Semicolon** = ‘;’
 
 Now we design a diagram for the regular expressions:
-<img src="https://github.com/PoriyaAsadollahy/LexicalAnalyzer/blob/main/Diagram.jpg" width="600" alt="Main DFA">
+
+<img src="https://github.com/PoriyaAsadollahy/LexicalAnalyzer/blob/main/Diagram.jpg" width="800" alt="Main DFA">
+
+### Implementation
+
+The implementation is done using C++ and object-oriented programming.
+
+**Token Class:**
+- Defines a token with a `type` and a `value`.
+- Provides methods for printing and comparing tokens.
+
+**Lexer Class:**
+- Responsible for converting a string into tokens.
+- Defines keywords and operators within the class.
+- Contains a method for performing the tokenization of the input string.
+
+**Helper Functions:**
+- **IsOperator**: Determines if a character is an operator.
+- **IsDelimiter**: Determines if a character is a delimiter.
+
+**Main Function:**
+1. Reads the program code from the `command.txt` file and stores it in a string (essentially in an `ostringstream`).
+2. Creates a `Lexer` object with the input string and calls the `tokenize` method on it.
+3. If errors are present, prints the word "error" to the terminal.
+4. If there are no errors, writes the program output to the `output.txt` file.
